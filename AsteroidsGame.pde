@@ -24,6 +24,9 @@ public void draw()
   for (int i = 0; i < space.size(); i++){
    space.get(i).show();
    space.get(i).move();
+   if (dist(bob.getMyCenterX(), bob.getMyCenterY(), space.get(i).getMyCenterX(), space.get(i).getMyCenterY()) < 30){
+     space.remove(space.get(i));
+   }
   }
   bob.show();
   bob.move();

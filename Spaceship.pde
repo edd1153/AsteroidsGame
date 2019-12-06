@@ -39,4 +39,10 @@ class Spaceship extends Floater
     bob.setNumFour(myDirectionY);
     bob.setNumFive(myPointDirection);
   }
+  public float getMyCenterX(){
+    return (float)myCenterX;
+  }
+  public float getMyCenterY(){
+    return (float)myCenterY;
+  }
 }
